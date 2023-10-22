@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(87, 82, 110);
+}
+nav{
+    font-family: Georgia;
+   width: 100%;
+   position: sticky;
+}
+   
+  nav ul{
+display: flex;
+align-items: center;
+list-style-type: none;
+height: 65px;
+background-color: black;
+color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding:34px ;
+    background-image: url('bg.webp');
+    background-size:cover;
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#myProgressbar{
+ width: 80vw;
+ cursor: pointer;
+ 
+}
+.icons{
+    margin-top:1rem;
+}
+.icons i{
+    cursor: pointer;
+}
+   .songitem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+   } 
+   .songitem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 50%;
+   }
+   .timestamp{
+    margin: 0 23px;
+   }
+   .timestamp i{
+    cursor: pointer;
+   }
+   .songitemcontainer{
+    margin-top: 74px;
+   }
+   .songifo{
+    position: absolute;
+    left: 10vw;
+   }
+   .songifo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+   }
+   @media (max-width:695px){
+    #masterclass{
+        display: flex;
+        flex-direction: column;
+    }
+   }
